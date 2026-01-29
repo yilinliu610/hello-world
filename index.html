@@ -1,16 +1,47 @@
-<html>
-    <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    </head>
-    <body>
-        Hello World
-        <img src="image.JPG" alt="my image" width="1200">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/TbTv2sN-UA4?si=3RZPnJZf74JGliGe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <br>
-<audio controls>
-  <source src="audio.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-    </body>
+    <header class="hero-section">
+        <h1>WEEK 3 WORKSHOP</h1>
+        <p>IntFundamentals of Web-Based Multimedia Communications</p>
+        <button id="helloBtn">Click Me</button>
+    </header>
 
+    <main class="gallery-container">
+        
+        <div class="card">
+            <div class="media-wrapper">
+                <iframe src="https://www.youtube.com/embed/TbTv2sN-UA4?si=3RZPnJZf74JGliGe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <h3>Video Work</h3>
+        </div>
+
+        <div class="card">
+            <div class="media-wrapper">
+                <img src="image.JPG" alt="My Artwork">
+            </div>
+            <h3>Visual Concept</h3>
+        </div>
+
+        <div class="card">
+            <div class="audio-wrapper">
+                <audio controls>
+                    <source src="audio.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <h3>Soundscape</h3>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
 </html>
